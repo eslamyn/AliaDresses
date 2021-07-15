@@ -1,0 +1,13 @@
+﻿@model DressesListViewModel
+
+
+    <h1>@Model.CurrentCategory</h1>
+    @foreach (var dress in Model.Dresses)
+    { 
+   
+        <div>
+        <h2>@dress.Model</h2>
+        <h3>@dress.Price.ToString("c")</h3>
+        <h4>@dress.Category.CategoryName</h4>
+        </div>
+    }
